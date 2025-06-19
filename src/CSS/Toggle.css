@@ -1,0 +1,47 @@
+/* CONTAINER */
+.switch {
+  /* CONTAINER */
+  display: inline-block;
+  input {
+    /* O INPUT SÓ ESTÁ PELA FUNÇÃO E NÃO PRECISA APARECER */
+    display: none;
+
+    /* QUANDO ELE FOR CLICADO */
+    &:checked {
+      + .slider_round {
+        /* MOVIMENTO DA BOLINHA */
+        &:before {
+          transform: translateX(var(--ballSilde));
+        }
+      }
+    }
+  }
+}
+
+.slider_round {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  /* OCUPAR TODO O ESPAÇO DO ELEMENTO PAI */
+  width: var(--toggleWidth);
+  height: var(--toggleHeight);
+  /**/
+  background-color: var(--toggleBack);
+  transition: var(--transition);
+  border: var(--toggleBorder);
+  border-radius: 34px;
+  /* BOLINHA */
+  &:before {
+    position: absolute;
+    content: ""; /* OBRIGATÓRIO */
+    /* MEDIDAS DA BOLINHA */
+    height: var(--ballSize);
+    width: var(--ballSize);
+    left: var(--ballDist);
+    background: white var(--imgBack) center no-repeat;
+    transition: var(--transition);
+    padding: 10px;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,21 @@
+:root {
+  /* DIVS */
+  --elementsDefaultBack: rgb(45, 52, 73);
+  --elementsDefaultBorder: 2px solid rgb(48, 53, 69);
+  --elementsDefaultActive: rgb(240, 93, 82);
+  --elementsDefaultBorderActive: 2px double var(--elementsDefaultActive);
+
+  /* ESPAÇAMENTO */
+  --spacement: 17px;
+
+  /* TOGGLE */
+  --transition: 0.4s;
+
+  --toggleHeight: 25px;
+  --toggleWidth: 60px;
+  --toggleBack: rgba(50, 50, 50, 0.15);
+
+  --ballSize: calc(var(--toggleHeight) + 10px);
+  --ballSilde: calc(var(--toggleHeight) + 12px);
+  --ballDist: -6px;
+}

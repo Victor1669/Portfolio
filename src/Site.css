@@ -1,0 +1,57 @@
+/* VARIÁVEIS DA APARÊNCIA */
+:root[theme="dark"] {
+  --foreColor: white;
+  --background: url(../IMG/bg-desktop.jpg) no-repeat;
+  --toggleBorder: 1px solid white;
+  --imgBack: url(../IMG/moon-stars.svg);
+  --ionLogoColor: white;
+  --pfpBorderColor: rgb(255, 81, 0);
+}
+:root[theme="light"] {
+  --foreColor: black;
+  --background: url(../IMG/bg-desktop-light.jpg) no-repeat;
+  --toggleBorder: 1px solid black;
+  --imgBack: url(../IMG/sun.svg);
+  --ionLogoColor: black;
+  --pfpBorderColor: purple;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--foreColor);
+  background: transparent var(--background);
+  background-size: cover;
+}
+
+/* VARIÁVEIS DAS MEDIDAS */
+:root {
+  --buttonWidth: 38vw;
+  --redesTop: 10vh;
+  --logoTop: 9.5vh;
+}
+@media only screen and (max-width: 768px) {
+  /* VARIÁVEIS DA APARÊNCIA */
+  :root[dark] {
+    --background: url(../IMG/bg-mobile.jpg) no-repeat;
+  }
+  :root[light] {
+    --background: url(../IMG/bg-mobile-light.jpg) no-repeat;
+  }
+  /* VARIÁVEIS DAS MEDIDAS */
+  :root {
+    --buttonWidth: 70vw;
+    --redesTop: 5vh;
+    --logoTop: 7vh;
+  }
+}

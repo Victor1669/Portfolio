@@ -1,0 +1,18 @@
+.redes {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  translate: 0 var(--redesTop);
+}
+.logo {
+  color: var(--ionLogoColor);
+  display: block;
+  margin: 0 16px;
+  [role="img"] {
+    width: 25px;
+    height: 25px;
+  }
+  &:hover {
+    color: var(--ionLogoColor);
+  }
+}
