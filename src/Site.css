@@ -1,21 +1,21 @@
 /* VARIÁVEIS DA APARÊNCIA */
 :root[theme="dark"] {
   --foreColor: white;
-  --background: url(../IMG/bg-desktop.jpg) no-repeat;
+  --background: url(./IMG/bg-desktop.jpg) no-repeat;
   --toggleBorder: 1px solid white;
-  --imgBack: url(../IMG/moon-stars.svg);
+  --imgBack: url(./IMG/moon-stars.svg);
   --ionLogoColor: white;
   --pfpBorderColor: rgb(255, 81, 0);
-  --pfpImage: url(../../IMG/react.webp);
+  --pfpImage: url(./IMG/react.webp);
 }
 :root[theme="light"] {
   --foreColor: black;
-  --background: url(../IMG/bg-desktop-light.jpg) no-repeat;
+  --background: url(./IMG/bg-desktop-light.jpg) no-repeat;
   --toggleBorder: 1px solid black;
-  --imgBack: url(../IMG/sun.svg);
+  --imgBack: url(./IMG/sun.svg);
   --ionLogoColor: black;
   --pfpBorderColor: purple;
-  --pfpImage: url(../../IMG/css.png);
+  --pfpImage: url(./IMG/css.png);
 }
 * {
   box-sizing: border-box;
@@ -45,10 +45,10 @@ body,
 @media only screen and (max-width: 768px) {
   /* VARIÁVEIS DA APARÊNCIA */
   :root[dark] {
-    --background: url(../IMG/bg-mobile.jpg) no-repeat;
+    --background: url(./IMG/bg-mobile.jpg) no-repeat;
   }
   :root[light] {
-    --background: url(../IMG/bg-mobile-light.jpg) no-repeat;
+    --background: url(./IMG/bg-mobile-light.jpg) no-repeat;
   }
   /* VARIÁVEIS DAS MEDIDAS */
   :root {
