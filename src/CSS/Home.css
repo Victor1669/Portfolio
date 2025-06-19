@@ -3,6 +3,9 @@
   border-radius: 50%;
   background: white;
   border: 2px solid var(--pfpBorderColor);
+  content: var(--pfpImage);
+  width: 100px;
+  height: 100px;
 }
 .nickName {
   margin: 1.5vh 0 3.5vh 0;

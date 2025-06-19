@@ -7,9 +7,7 @@ function Home() {
   return (
     <>
       <div className="homeCont">
-        <div className="pfpImageContainer">
-          <img width={100} src="../../IMG/react.webp" />
-        </div>
+        <div className="pfpImageContainer"></div>
         <p className="nickName">@Victor1669</p>
         <Toggle />
         {[
