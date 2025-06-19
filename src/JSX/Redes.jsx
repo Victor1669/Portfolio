@@ -4,7 +4,7 @@ export default function Redes() {
   return (
     <>
       <div className="redes">
-        <a className="logo" href="https://github.com">
+        <a className="logo" href="https://github.com/Victor1669">
           <ion-icon name="logo-github"></ion-icon>
         </a>
         <a className="logo" href="https://youtube.com">
