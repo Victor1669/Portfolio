@@ -2,7 +2,8 @@
   width: fit-content;
   display: flex;
   justify-content: space-between;
-  translate: 0 var(--redesTop);
+  position: absolute;
+  bottom: 30px;
 }
 .logo {
   color: var(--ionLogoColor);

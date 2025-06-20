@@ -39,7 +39,6 @@ body,
 /* VARIÁVEIS DAS MEDIDAS */
 :root {
   --buttonWidth: 38vw;
-  --redesTop: 18vh;
   --logoTop: 9.5vh;
 }
 @media only screen and (max-width: 768px) {
