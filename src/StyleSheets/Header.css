@@ -1,0 +1,47 @@
+#Header {
+  grid-area: Header;
+  background-color: var(--headerBackColor);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & > * {
+    margin: 0 20px;
+  }
+}
+h1 {
+  font-family: "BBH Sans Hegarty", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+nav {
+  display: flex;
+  gap: 30px;
+
+  .button {
+    background-color: var(--btnBackColor);
+
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+
+    display: flex;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      filter: drop-shadow(0 0 10px white);
+    }
+  }
+}
+.theme {
+  border: 1px solid
+    rgb(from var(--btnBackColor) calc(r + 200) calc(g + 200) calc(b + 200)) !important;
+  padding: 10px 15px !important;
+}

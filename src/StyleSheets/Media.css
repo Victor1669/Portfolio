@@ -1,0 +1,48 @@
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .App {
+    overflow-y: auto;
+    grid-template-rows: 100px 1fr 700px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "Header"
+      "Main"
+      "Aside";
+  }
+  #M-Header {
+    flex-direction: column;
+  }
+  #text-container {
+    width: 90%;
+  }
+  .tech-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+  .App {
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 65vw 35vw;
+    grid-template-areas:
+      "Header Header"
+      "Main Aside";
+  }
+  #M-Header {
+    flex-direction: row;
+  }
+  #text-container {
+    width: inherit;
+  }
+  .name {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    width: 80%;
+    margin: auto;
+  }
+}

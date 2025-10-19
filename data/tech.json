@@ -1,0 +1,30 @@
+[
+  {
+    "name": "HTML5",
+    "src": "/HTML5.png"
+  },
+  {
+    "name": "CSS3",
+    "src": "/css.png"
+  },
+  {
+    "name": "JavaScript",
+    "src": "/JavaScript.png"
+  },
+  {
+    "name": "React.Js",
+    "src": "/react.svg"
+  },
+  {
+    "name": "Vite",
+    "src": "/vite.svg"
+  },
+  {
+    "name": "Git",
+    "src": "/Git.png"
+  },
+  {
+    "name": "GitHub",
+    "src": "/github.svg"
+  }
+]

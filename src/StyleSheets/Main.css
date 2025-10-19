@@ -1,0 +1,87 @@
+main {
+  grid-area: Main;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#M-Header {
+  padding: 0 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.pfp {
+  width: 200px;
+  height: 200px;
+  background-image: url("/PFP.png");
+
+  /* display: none; */
+
+  border-radius: 50%;
+  margin-top: 40px;
+
+  cursor: pointer;
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: drop-shadow(0 0 30px var(--shadowColor));
+  }
+}
+.name {
+  font-size: 1.75rem;
+  text-align: center;
+}
+.subtitle {
+  animation-delay: 0.4s;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#text-container {
+  margin-top: 10px;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+.desc {
+  font-size: 18px;
+  text-align: justify;
+  text-indent: 1rem;
+
+  &:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  &:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  &:nth-child(5) {
+    animation-delay: 0.6s;
+  }
+}
+
+.name,
+.subtitle,
+.desc {
+  opacity: 0;
+  animation: m-descida 0.4s linear forwards;
+  translate: 0 0px;
+
+  margin-bottom: 10px;
+}
+
+@keyframes m-descida {
+  to {
+    opacity: 1;
+    translate: 0 20px;
+  }
+}
