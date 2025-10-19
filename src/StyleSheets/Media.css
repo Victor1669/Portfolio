@@ -15,10 +15,17 @@
     flex-direction: column;
   }
   #text-container {
-    width: 90%;
+    width: 100%;
   }
   .tech-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  nav {
+    gap: 25px;
+    .button {
+      font-size: 1rem !important;
+      padding: 6px;
+    }
   }
 }
 @media only screen and (min-width: 768px) {

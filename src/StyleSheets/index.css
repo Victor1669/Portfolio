@@ -38,6 +38,7 @@
   max-width: 100vw;
 }
 .App {
+  min-width: 375px;
   min-height: 100vh;
   width: inherit;
   display: grid;
