@@ -1,26 +1,13 @@
-import { useEffect, useState } from "react";
 import Aside from "./Aside";
 import Header from "./Header";
 import Main from "./Main";
+import ThemeButton from "./ThemeButton";
 
 export default function App() {
-  const [theme, setTheme] = useState("dark");
-
-  useEffect(() => {
-    document.documentElement.className = theme;
-  }, [theme]);
-
   return (
     <div className="App">
       <Header>
-        <button
-          onClick={() => {
-            setTheme((prev) => (prev === "dark" ? "light" : "dark"));
-          }}
-          className="button theme"
-        >
-          ☀
-        </button>
+        <ThemeButton />
       </Header>
       <Main />
       <Aside />
