@@ -22,7 +22,7 @@ export default function Aside() {
             </div>
           ))
         ) : (
-          <p>Cargando...</p>
+          <p>Carregando...</p>
         )}
       </div>
     </aside>
